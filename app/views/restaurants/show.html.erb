@@ -1,0 +1,21 @@
+<div>
+<p><strong>Name</strong></p>
+<%= @restaurant.name %>
+</div>
+<div>
+<p><strong>Address</strong></p>
+<%= @restaurant.address %>
+</div>
+<div>
+<p><strong>Phone Number</strong></p>
+<%= @restaurant.phone_number %>
+</div>
+<div>
+<p><strong>Category</strong></p>
+<%= @restaurant.category %>
+</div>
+<p><strong>Review</strong></p>
+<% @reviews.each do |review| %>
+<li><%= review.content %></li>
+  <% end %>
+</div>
